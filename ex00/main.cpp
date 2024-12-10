@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScalarConverter.hpp                                :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moelalj <moelalj@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/05 09:55:10 by moelalj           #+#    #+#             */
-/*   Updated: 2024/12/08 15:42:46 by moelalj          ###   ########.fr       */
+/*   Created: 2024/12/05 10:33:21 by moelalj           #+#    #+#             */
+/*   Updated: 2024/12/09 18:59:25 by moelalj          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCALARCONVERTER_HPP
-# define SCALARCONVERTER_HPP
-#include <climits>
-#include <iostream>
+#include "ScalarConverter.hpp"
 
-class ScalarConverter{
-    private:
-        ScalarConverter();
-        ScalarConverter(const ScalarConverter &rhs);
-        ScalarConverter& operator=(const ScalarConverter &rhs);
-        ~ScalarConverter();
-    public:
-        static void convert(std::string str);
-};
-#endif
+int main(int argc, char *argv[])
+{
+    if (argc == 2){
+        try{
+            ScalarConverter::convert(argv[1]);
+        }
+        catch(std::exception &e){
+            std::cout << "Exception Caught :" << e.what() << std::endl;
+        }
+    }
+    else
+        std::cerr << "Invalid Parms, Please try again!" << std::endl;
+    return 0;
+}

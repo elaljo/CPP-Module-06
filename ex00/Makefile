@@ -6,7 +6,7 @@
 #    By: moelalj <moelalj@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/05 09:53:26 by moelalj           #+#    #+#              #
-#    Updated: 2024/12/05 10:00:10 by moelalj          ###   ########.fr        #
+#    Updated: 2024/12/05 11:01:31 by moelalj          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ g++ = c++
 RM = rm -rf
 
 SRC = main.cpp\
-			ScalarConverter.cpp\
+	ScalarConverter.cpp\
 
 OBJS := $(SRC:.cpp=.o)
 

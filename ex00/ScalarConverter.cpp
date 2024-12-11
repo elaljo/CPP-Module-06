@@ -6,13 +6,11 @@
 /*   By: moelalj <moelalj@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 09:55:08 by moelalj           #+#    #+#             */
-/*   Updated: 2024/12/10 17:04:06 by moelalj          ###   ########.fr       */
+/*   Updated: 2024/12/11 12:32:40 by moelalj          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScalarConverter.hpp"
-
-#include <iostream>
 
 ScalarConverter::ScalarConverter(){
     std::cout << "Default Constructor Called" << std::endl;
@@ -50,6 +48,7 @@ int check_pseudo(std::string &str){
     }
     return 0;
 }
+
 std::string detect_type(std::string &str){
     if (check_pseudo(str) == 1)
         return type_infini;
@@ -104,6 +103,7 @@ void    print_notanum(){
     std::cout << "float: nanf" << std::endl;
     std::cout << "double: nan" << std::endl;
 }
+
 void    ScalarConverter::convert(std::string str){
     if (detect_type(str) == type_infini)
         print_infini();

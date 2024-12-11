@@ -6,13 +6,13 @@
 /*   By: moelalj <moelalj@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/05 09:55:10 by moelalj           #+#    #+#             */
-/*   Updated: 2024/12/08 15:42:46 by moelalj          ###   ########.fr       */
+/*   Updated: 2024/12/11 12:32:47 by moelalj          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SCALARCONVERTER_HPP
 # define SCALARCONVERTER_HPP
-#include <climits>
+
 #include <iostream>
 
 class ScalarConverter{
